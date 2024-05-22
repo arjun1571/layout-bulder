@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +30,48 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+
+.layout-builder {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
 }
+
+.partition {
+  position: relative;
+}
+
+.split-button {
+  position: absolute;
+  padding: 5px;
+  font-size: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.remove-button {
+  position: absolute;
+  padding: 5px;
+  font-size: 12px;
+  background-color: #FF4F4F;
+  color: white;
+  border: none;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+}
+
+.resize-handle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #666;
+  bottom: 0;
+  right: 0;
+  cursor: nwse-resize;
+}
+
